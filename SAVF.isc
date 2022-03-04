@@ -1,0 +1,99 @@
+﻿///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////  SECTOR SAVF - AIRAC 2013 | ÚLTIMA ACTUALIZACIÓN 11 - 12 - 2020               			     //////////
+//////////  CRÉDITOS: Francisco Gonzalez                                                 			     //////////
+//////////  AGRADECIMIENTOS: Francisco Buschiazzo, Elias Gonzalez, Sebastian Arancibia Y Martin Montero  //////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+[INFO]
+S045.46.24.000
+W067.22.18.000
+34
+26
+7
+SAVF;SAVF/SIDS;SAVF/STARS;SAVF/GATES;SAVF/TAXIWAYS;SAVF/POLYLINE;SAVF/COLORS;SAVF/MVA;
+
+[AIRPORT]
+F;SAVF.apt
+
+[RUNWAY]
+F;SAVF.rwy
+
+[FIXES]
+F;NAVAIDS/SAVF.fix
+
+[NDB]
+F;NAVAIDS/SAVF.ndb
+
+[VOR]
+F;NAVAIDS/SAVF.vor
+
+[LOW AIRWAY]
+F;NAVAIDS/SAVF.lairway
+
+[HIGH AIRWAY]
+F;NAVAIDS/SAVF.hairway
+
+[VFRFIX]
+// FIELDS NAME;ALTITUDE;LAT;LON;
+F;ZZZZ.vfi
+F;ZZZZ.vfi
+
+[VFRROUTE]
+F;SAVF.VRT
+// ROUTE : FIELDS ID;LAT;LON;
+
+[ARTCC]
+F;ARTCC/SAVF.artcc
+F;ARTCC/SAVF_OCC.artcc
+
+[ARTCC LOW]
+F;ARTCC/SAVF.lartcc
+
+[ARTCC HIGH]
+F;ARTCC/SAVF.hartcc
+
+[GEO]
+F;GEO/SAVF.geo
+F;GEO/MALVINAS.geo
+F;GEO/SAWG.geo
+F;GEO/SAWH.geo
+F;GEO/SAWE.geo
+F;GEO/SAWT.geo
+F;GEO/SAWJ.geo
+F;GEO/SAWC.geo
+F;GEO/SAWU.geo
+F;GEO/SAWD.geo
+F;GEO/SAWR.geo
+F;GEO/SAVH.geo
+F;GEO/SAWP.geo
+F;GEO/SAWM.geo
+F;GEO/SAVC.geo
+F;GEO/SAVR.geo
+F;GEO/SAWS.geo
+F;GEO/SAVE.geo
+F;GEO/SAVB.geo
+F;GEO/SAVD.geo
+F;GEO/SAVT.geo
+F;GEO/SAVY.geo
+F;GEO/SAVS.geo
+F;GEO/SAVN.geo
+F;GEO/SAVV.geo
+
+[DEFINE]
+F;SAVF\colors\colors.def
+
+[FILLCOLOR]
+F;SAVF.TFL
+F;POLYGON/wh_ad_gnd.pol
+F;POLYGON/we_ad_gnd.pol
+F;POLYGON/wg_ad_gnd.pol
+F;POLYGON/wc_ad_gnd.pol
+F;POLYGON/vc_ad_gnd.pol
+F;POLYGON/ve_ad_gnd.pol
+F;POLYGON/vt_ad_gnd.pol
+F;POLYGON/vy_ad_gnd.pol
+F;POLYGON/vv_ad_gnd.pol
+
+[ATC]
+F;SAVF.atc
+F;OTHER\AR_STAFF.atc

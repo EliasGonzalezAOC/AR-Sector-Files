@@ -1,0 +1,149 @@
+//
+//
+// IVAO SECTORFILE STRUCTURE IVAO ATC CLIENT
+// Last update 1 / AUG / 2019
+//
+// "This software is published under the GNU GPL Licence a copy of which must always accompany this file"
+// "This Sectorfile must always acompanied by the History file"
+// "copyright IVAO - INTERNATIONAL VIRTUAL AVIATION ORGANISATION"
+//
+//  COORDINATES 
+//    1)   N038.10.04.627;E024.33.34.907;
+//    2)   38.02235785;24.12223578;
+//    3)   ALX;ALX;   // VOR NDB FIX 
+//         A MIX OF 1 AND 2 IN ONE LINE IS NOT ALLOWED AND WILL GIVE AN ERROR. 
+//         A MIX BETWEEN 1 AND 3  s allowed.
+//         A MIX BETWEEN 2 AND 3  s allowed.
+//
+//  COLORS
+//    1)  #00RRGGBB or $00RRGGBB or #RRGGBB or $RRGGBB     // HEXADECIMAL
+//    2)  %rrr:ggg:bbb  // DECIMAL
+//
+//
+// SEPARATED FILES
+// This files must be located in the sub folder Include\ of the Sectorfolder.
+// ICAO.GTS   = Gates / parkings stands.
+// ICAO.TXI   = Taxilabels
+// ICAO.SID   = SID's
+// ICAO.STR   = STAR's
+// ICAO.VFI   = VFR FIXES
+// ICAO.VRT   = VFR ROUTES
+// ICAO.MVA   = MRVA AREAS
+// ICAO.TFL   = POLYLINE (see FILLCOLOR) ( FOR USE FOR AREAS OUTSIDE ICAO AREA USE F;FILENAME in [FILLCOLOR]
+//
+// ALLOWED LINES EXCEPT DATA LINES ACCEPTED
+//    1) EMPTY ROWS
+//    2) ROWS STARTING WITH //      2xslash
+//    All other lines longer than 2 character will give an error.
+//
+// LABELS in positions are optional.
+// SEPARATED FILES are Optional and RECOMENDED.
+//
+// SEPARATED FILES FOR ALL GROUPS NOT DEFINED ABOVE AND GROUP [INFO]
+// Files are defined by the command F;
+// e.g.
+// [ARTCC]
+// F;area1.xxx
+// F;area2.xxx
+// filename and extension are not defined, use on discretion.
+// !! IMPORTANT : behind the command F; set only filename and keep it clear NO text and NO ;
+// 
+[INFO]
+S027.36.39.000
+W057.40.06.000
+60
+49.3
+-8
+SARR
+
+// the lines above must be clean with no text behind.
+// 1st line = latitude centerpoint
+// 2nd line = longitude centerpoint
+// 3rd line = Vertical RATIO (latitude)
+// 4th line = Horizontal RATIO (longitude)
+// 5th line = magnetic variation
+// 6th line = optional, or emtpy. Configures the subfolder in the include map of the map of the opened sectorfile. you can define also submap1\submap11
+
+[AIRPORT]
+SARM;0;0;S030.16.18.919;W057.38.24.832;<Name>; //Monte Caseros Aerodrome
+SARC;0;0;S027.26.43.811;W058.45.42.710;<Name>; //Corrientes Aero.
+SARE;0;0;S027.26.59.950;W059.03.22.050;<Name>; //Resistencia Aero.
+SARL;0;0;S029.41.21.930;W057.09.07.481;<Name>; //Paso De Los Libres Aerodrome
+SARP;0;0;S027.23.09.020;W055.58.14.621;<Name>; //Posadas Aero.
+SARQ;0;0;S026.48.41.976;W060.26.42.000;<Name>; //Presidencia Roque S. Pena
+SARS;0;0;S026.45.23.468;W060.29.35.171;<Name>; //Presidencia Roque Saenz Pena Aerodrome
+SATD;0;0;S026.24.00.000;W054.33.59.998;<Name>; //ElDorado
+SATG;0;0;S029.05.58.099;W059.15.02.099;<Name>; //Goya
+SATM;0;0;S029.13.23.002;W058.05.17.002;<Name>; //Mercedes
+SATO;0;0;S027.29.00.000;W055.04.00.000;<Name>; //Obera
+SATR;0;0;S029.12.37.001;W059.41.48.000;<Name>; //Reconquista
+SATU;0;0;S029.46.59.002;W057.59.30.000;<Name>; //Curuzu Cuatia Aerodrome
+SARF;0;0;S026.12.45.799;W058.13.41.200;<Name>; //Formosa Aerodrome
+SARI;0;0;S025.44.14.212;W054.28.24.398;<Name>; //Iguazu Aerodrome
+SATC;0;0;S025.17.59.996;W057.44.00.002;<Name>; //Clorinda
+SATK;0;0;S024.43.16.921;W060.32.55.810;<Name>; //Las Lomitas
+SARR;0;0;N024.43.16.921;E060.32.55.810;<Name>; //Resistencia Centro
+
+
+[RUNWAY]
+F;SARR.rwy
+
+[FIXES]
+F;NAVAIDS/SARR.fix
+
+[NDB]
+F;NAVAIDS/SARR.ndb
+
+[VOR]
+F;NAVAIDS/SARR.vor
+
+[HIGH AIRWAY]
+F;SARR.hairways
+
+
+[LOW AIRWAY]
+//FIELDS TYPE;ID;LAT;LON; TYPES :   L = LABEL    T = AIRWAY
+F;SARR.lairways
+
+
+
+[VFRFIX]
+// FIELDS NAME;ALTITUDE;LAT;LON;
+
+[VFRROUTE]
+F;SAEZ.VRT
+// ROUTE : FIELDS ID;LAT;LON;
+
+[ARTCC]
+F;ARTCC/SARR.artcc
+F;ARTCC/SARR.lartcc
+F;ARTCC/SARR.hartcc
+
+
+
+
+[GEO]
+F;GEO/SARM.geo
+F;GEO/SARC.geo
+F;GEO/SARI.geo
+F;GEO/SARE.geo
+F;GEO/SARP.geo
+F;GEO/SATR.geo
+F;GEO/SARF.geo
+F;GEO/SATG.geo
+F;GEO/SARL.geo
+
+[DEFINE] 
+F;SARR\colors\colors.def
+
+
+[FILLCOLOR]
+F;SAEF.TFL
+F;POLYGON/re_ad_gnd.pol
+F;POLYGON/ri_ad_gnd.pol
+F;POLYGON/rp_ad_gnd.pol
+F;POLYGON/rc_ad_gnd.pol
+F;POLYGON/rf_ad_gnd.pol
+
+[ATC]
+F;SARR.atc

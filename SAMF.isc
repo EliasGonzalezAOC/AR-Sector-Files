@@ -1,0 +1,79 @@
+//////////////////////////////////////////////////////////////////////////////////////
+//////////  SECTOR SAMF - AIRAC 2101 | ÚLTIMA ACTUALIZACIÓN 21 - 02 - 2021  //////////
+//////////  CRÉDITOS: FEDERICO BALBO                                        //////////
+//////////  AGRADECIMIENTOS: GASPAR GASPARONI   			                //////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+[INFO]
+S032.49.55.000
+W068.47.27.000
+60
+50
+-1
+SAMF;SAMF/ARTCC;SAMF/SID;SAMF/STAR;SAMF/GATES;SAMF/TAXIWAYS;SAMF/POLYLINE;SAMF/POLYGON;SAMF/COLORS;SAMF/MVA;SAMF/VFR;SAMF/NAVAIDS;SAMF/OTHER;
+
+[AIRPORT]
+F;SAMF.apt
+
+[RUNWAY]
+F;SAMF.rwy
+
+[FIXES]
+F;NAVAIDS/SAMF.fix
+
+[NDB]
+F;NAVAIDS/SAMF.ndb
+
+[VOR]
+F;NAVAIDS/SAMF.vor
+
+[LOW AIRWAY]
+F;NAVAIDS/SAMF.lairway
+
+[HIGH AIRWAY]
+F;NAVAIDS/SAMF.hairway
+
+[VFRFIX]
+F;VFR/SAME.vfi
+
+[VFRROUTE]
+F;VFR/SAME.vrt
+
+[ARTCC]
+F;ARTCC/SAMF.artcc
+
+[ARTCC LOW]
+F;ARTCC/SAMF.lartcc
+
+[ARTCC HIGH]
+F;ARTCC/SAMF.hartcc
+
+[GEO]
+F;GEO/SAMF.geo
+F;GEO/SAMF.prohibit
+F;GEO/SAMF.restrict
+F;GEO/SAMF.danger
+F;GEO/SAME.geo
+F;GEO/SAMI.geo
+F;GEO/SANU.geo
+F;GEO/SAOU.geo
+F;GEO/SAOR.geo
+F;GEO/SAMR.geo
+F;GEO/SAMM.geo
+
+[DEFINE]
+F;COLORS\colors.def
+
+[COLORSCHEME]
+F;COLORS\MENDOZA.CLR
+
+[FILLCOLOR]
+F;POLYGON/SAMF.pol
+
+[ATC]
+F;SAMF.atc
+F;OTHER\AR_STAFF.atc
+
+[PROFILE]
+F;OTHER\SSR.CPR
+F;OTHER\CONFIG.CPR
